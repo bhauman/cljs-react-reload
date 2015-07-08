@@ -1,4 +1,4 @@
-(defproject cljs-react-reload "0.1.0-SNAPSHOT"
+(defproject cljs-react-reload "0.1.0"
   :description "A library to define React classes that maintain local state on reload."
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"

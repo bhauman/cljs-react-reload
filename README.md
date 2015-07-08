@@ -7,9 +7,7 @@ local state for React components that I am reloading live. This
 library will be very helpful for folks who use Figwheel and write
 React.js classes.
 
-To understand what it does it is probably best to read it:
-
-
+To understand what it does it is probably best to [read it](https://github.com/bhauman/cljs-react-reload/blob/master/src/cljs_react_reload/core.clj)
 
 @dan_abramov's React hotloader prompted me to write this.
 
