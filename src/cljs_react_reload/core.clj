@@ -7,7 +7,7 @@
 
 (defmacro defonce-react-class
   "Creates a  stable base React class and then patches it on reload."
-  [vname body & {:keys [redefine]}]
+  [vname body]
   (if (and env/*compiler*
              (let [{:keys [optimizations]} (get env/*compiler* :options)]
                (or (nil? optimizations) (= optimizations :none))))
