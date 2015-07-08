@@ -13,6 +13,8 @@ To understand what it does it is probably best to [read it](https://github.com/b
 
 ## Usage
 
+[![Clojars Project](https://clojars.org/cljs-react-reload/latest-version.svg)](https://clojars.org/lein-figwheel)
+
 Require the `cljs-react-reload.core` macros
 
 ```clojure

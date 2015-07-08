@@ -1,9 +1,12 @@
 (defproject cljs-react-reload "0.1.0"
   :description "A library to define React classes that maintain local state on reload."
-  :url "http://example.com/FIXME"
+  :url "https://github.com/bhauman/cljs-react-reload"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
+  :scm { :name "git"
+         :url "https://github.com/bhauman/cljs-react-reload.git" }
+  
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/clojurescript "0.0-3308"]]
 
