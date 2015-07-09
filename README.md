@@ -19,7 +19,8 @@ Require the `cljs-react-reload.core` macros
 
 ```clojure
 (ns example.core
-  (:require-macros :refer [defonce-react-class def-react-class]))
+  (:require-macros
+   [cljs-react-reload.core :refer [defonce-react-class def-react-class]))]
 ```
 
 Then use the `defonce-react-class` to define a React class that gets
