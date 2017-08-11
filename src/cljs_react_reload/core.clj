@@ -3,16 +3,16 @@
    [cljs.env :as env]))
 
 (defmacro def-react-class [vname body]
-  `(def ~vname (js/React.createClass ~body)))
+  `(def ~vname (js/createReactClass ~body)))
 
 (defmacro defonce-react-class
   "Creates a  stable base React class and then patches it on reload."
   [vname body]
   (if (and env/*compiler*
-             (let [{:keys [optimizations]} (get env/*compiler* :options)]
-               (or (nil? optimizations) (= optimizations :none))))
+           (let [{:keys [optimizations]} (get env/*compiler* :options)]
+             (or (nil? optimizations) (= optimizations :none))))
     `(let [base# ~body]
-       (defonce ~vname (js/React.createClass base#))
+       (defonce ~vname (js/createReactClass base#))
        (doseq [property# (map
                           name
                           '(shouldComponentUpdate
@@ -25,4 +25,4 @@
                             render))]
          (when (aget base# property#)
            (aset (.-prototype ~vname) property# (aget base# property#)))))
-    `(defonce ~vname (js/React.createClass ~body))))
+    `(defonce ~vname (js/createReactClass ~body))))
