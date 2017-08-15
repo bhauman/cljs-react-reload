@@ -1,4 +1,4 @@
-(defproject cljs-react-reload "0.1.1"
+(defproject org.clojars.borkdude/cljs-react-reload "0.1.2-SNAPSHOT"
   :description "A library to define React classes that maintain local state on reload."
   :url "https://github.com/bhauman/cljs-react-reload"
   :license {:name "Eclipse Public License"
